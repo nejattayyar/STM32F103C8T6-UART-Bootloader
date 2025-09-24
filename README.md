@@ -7,6 +7,7 @@ UART bootloader for stm32f103c8t6 blue pill clone board
 The USART1 connection has been configured. Baud rate: 115200 Bits/s, Word length: 8 Bits(including parity), Stop bits: 1. The USART1 global interrupt has been enabled. The clock settings were configured to 8 MHz HSI the clock setting has to match the clock setting of the project which is going to be uploaded from the bootloader.
 
 The bootloader memory address has a length of 16KB this configuration has been done with editing the linker file
+'''
 
 /* Memories definition */
 MEMORY
@@ -15,8 +16,10 @@ MEMORY
   FLASH    (rx)    : ORIGIN = 0x8000000,   LENGTH = 16K  /* 16KB for bootloader */
 }
 
+'''
 ## Configurations for the application
 The app which is going to be uploaded using the bootloader needs to have following memory settings in the linker file:
+'''
 
 MEMORY
 {
@@ -24,8 +27,10 @@ MEMORY
   FLASH    (rx)    : ORIGIN = 0x8004000,   LENGTH = 48K
 }
 
+'''
 And the app needs an additional vector table set command in the main function:
 
+'''
 APP_ADDRESS2 = 0x08004000U
 int main(void)
 {
@@ -37,11 +42,17 @@ int main(void)
   //Rest of the code...
 }
 
+'''
 ## Configurations for the Python script
 The python script needs to be set to the right port which is COM6 for me. And also the correct baud rate which is 115200 for this bootloader project.
+'''
 
 ser = serial.Serial('COM6', 115200, timeout=1)
 
+'''
 The desired apps .bin file must be copied to the python scripts location for script to work and the .bin file name must be put in the line:
-    
+'''
+
     if send_firmware('jump_to_app2.bin'):
+
+'''
