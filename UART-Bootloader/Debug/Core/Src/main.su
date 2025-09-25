@@ -1,0 +1,9 @@
+../Core/Src/main.c:72:5:__io_putchar	16	static
+../Core/Src/main.c:80:13:jump_to_app	24	static,ignoring_inline_asm
+../Core/Src/main.c:122:5:main	16	static
+../Core/Src/main.c:191:6:SystemClock_Config	72	static
+../Core/Src/main.c:228:13:MX_USART1_UART_Init	8	static
+../Core/Src/main.c:261:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:298:12:ota_download_and_flash	72	static
+../Core/Src/main.c:394:6:HAL_UART_RxCpltCallback	16	static
+../Core/Src/main.c:408:6:Error_Handler	4	static,ignoring_inline_asm

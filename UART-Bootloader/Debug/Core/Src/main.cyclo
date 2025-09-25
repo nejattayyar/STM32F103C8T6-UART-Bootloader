@@ -1,0 +1,9 @@
+../Core/Src/main.c:72:5:__io_putchar	1
+../Core/Src/main.c:80:13:jump_to_app	1
+../Core/Src/main.c:122:5:main	5
+../Core/Src/main.c:191:6:SystemClock_Config	3
+../Core/Src/main.c:228:13:MX_USART1_UART_Init	2
+../Core/Src/main.c:261:13:MX_GPIO_Init	1
+../Core/Src/main.c:298:12:ota_download_and_flash	10
+../Core/Src/main.c:394:6:HAL_UART_RxCpltCallback	2
+../Core/Src/main.c:408:6:Error_Handler	1
