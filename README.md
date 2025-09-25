@@ -1,5 +1,5 @@
-# STM32F103C8T6-UART-Bootloader
-UART bootloader for stm32f103c8t6 blue pill clone board
+# STM32F1-UART-Bootloader
+UART bootloader tested on stm32f103c8t6 blue pill clone board
 ## Configurations for the bootloader
 <img width="1920" height="1080" alt="Screenshot (528)" src="https://github.com/user-attachments/assets/7bff37e7-3c98-4bcb-b207-43578305c393" />
 <img width="1920" height="1080" alt="Screenshot (527)" src="https://github.com/user-attachments/assets/e2db9e2a-a867-4f9b-b279-d0cb0b617e27" />
